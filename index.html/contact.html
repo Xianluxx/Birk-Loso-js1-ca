@@ -1,0 +1,59 @@
+Bilde
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </header>
+
+    <main class="form-container">
+      <h1>Contact Us</h1>
+      <div class="success-message"></div>
+      <form id="contact-form">
+        <div>
+          <label>
+            Name:
+            <input type="text" id="name" />
+          </label>
+          <div class="Failed-form" id="name-Failed">Required</div>
+        </div>
+        <div>
+
+          <label>
+            Subject:
+            <input type="text" id="subject" />
+          </label>
+          <div class="Failed-form" id="subject-Failed">Must have a value with a minimum length of 10</div>
+        </div>
+        <div>
+
+          <label>
+            Email:
+            <input type="email" id="email" />
+          </label>
+          <div class="Failed-form" id="email-Failed">Must have a value and be formatted like an email address</div>
+        </div>
+        <div>
+
+          <label>
+            Address:
+            <input type="text" id="address" />
+          </label>
+          <div class="Failed-form" id="address-Failed">Must have a value with a minimum length of 25</div>
+        </div>
+        <div class="form-actions">
+          <button id="submit-button">Submit</button>
+        </div>
+      </form>
+    </main>
+    <script src="/js/script2.js"></script>
+  </body>
+</html>
